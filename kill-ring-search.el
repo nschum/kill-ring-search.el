@@ -6,7 +6,7 @@
 ;; Version: 1.1
 ;; Keywords: convenience, matching
 ;; URL: http://nschum.de/src/emacs/kill-ring-search/
-;; Compatibility: GNU Emacs 21.x, GNU Emacs 22.x, GNU Emacs 22.x
+;; Compatibility: GNU Emacs 21.x, GNU Emacs 22.x, GNU Emacs 23.x
 ;;
 ;; This file is NOT part of GNU Emacs.
 ;;

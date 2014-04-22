@@ -37,6 +37,8 @@
 ;;
 ;;; Change Log:
 ;;
+;;    Prevent problem when `truncate-lines` is on. (thanks to Bart Westgeest)
+;;
 ;; 2007-05-15 (1.1)
 ;;    Added compatibility to icomplete-mode.
 ;;    Added scrolling support.
@@ -173,6 +175,7 @@ that SEARCH-STRING is visible."
   "Set up the minibuffer for `kill-ring-search' completions."
   (add-hook 'post-command-hook 'kill-ring-search-post-command nil t)
   (add-hook 'pre-command-hook 'kill-ring-search-pre-command nil t)
+  (setq truncate-lines nil)
   (with-current-buffer kill-ring-search-calling-buffer
     (remove-hook 'minibuffer-setup-hook 'kill-ring-search-minibuffer-setup))
   (setq kill-ring-search-calling-buffer nil))
